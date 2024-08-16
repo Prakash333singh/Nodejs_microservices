@@ -37,6 +37,4 @@ consumer will wait for the response jo service use karna chahata ho
 docker run -p 5672:5672 rabbbitmq
 //default port
 
-git remote add origin https://github.com/Prakash333singh/Nodejs_microservices.git
-git branch -M main
-git push -u origin main
+
