@@ -1,0 +1,42 @@
+## Microservices
+
+- as a collection of small independent and loosely coupled services
+- each service focus on a single feature
+  -can be developed and deployed independely
+  -faster dveelopment
+  -better fault isolation
+  -can use different programing language for each service
+  -new feature can be added easily without affecting whole application
+
+## communicate
+
+http requests (api gateway)
+meassage broker eg.(rabbitmq ,kafka)
+
+## part 2
+
+rabbitmq it is software used to communicate two microserverces.
+es mai hum data ko queue mai daal dete hai aur consumer data ko consume karta hai
+understand the message queue
+use message queue to communicate b/w microservices
+demo tutorial with nodejs and rabbit mq as message queue used a message broker
+
+## order service
+
+like this is order service(producer-service data ko store kar rha queue mai )
+queue - data insert in queue { userId ,productName,orderId ,price}
+message will remain in queue until any other service used this data.
+
+## email service
+
+(consumer -will received the data from queue and use it )
+consumer will wait for the response jo service use karna chahata ho
+
+## run rabbitMq with docker
+
+docker run -p 5672:5672 rabbbitmq
+//default port
+
+git remote add origin https://github.com/Prakash333singh/Nodejs_microservices.git
+git branch -M main
+git push -u origin main
